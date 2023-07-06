@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # vue-project
 
 This template should help get you started developing with Vue 3 in Vite.
@@ -27,3 +28,8 @@ npm run dev
 ```sh
 npm run build
 ```
+=======
+# Vue-learning
+This is a Repository for My Vue learning Journey.
+My first commit is with a todo app i created.
+>>>>>>> 9a9393cae9debb06c92cfad7489b90f0af3140ec
