@@ -1,19 +1,3 @@
-<!-- <script setup>
-import { ref } from 'vue'
-
-let message = ref('Hello World!');
-
-</script>
-
-<template>
-
-  <div>
-    <h1>{{ message }}</h1>
-    <input type="text" name="" id="" v-model="message.value">
-  </div>
-
-</template> -->
-
 <script setup>
 import { ref, reactive } from 'vue'
 
@@ -38,13 +22,20 @@ const addUser = (event) => {
 </script>
 
 <template>
-  <div>
-    <h1>{{ message }}</h1>
-    <input type="text" v-model="name">
-    <button @click="addUser">Add</button>
-    <ul>
-      <li v-for="(user, i) in users" :key="i">{{ user.name }}</li>
+  <div class="card card-body">
+    <h2>Todo List</h2>
+    <div class="d-flex w-50 my-3">
+      <input type="text" v-model="name" class="form-control">
+      <button @click="addUser" class="btn btn-success">Add</button>
+    </div>
+
+    <ul class="list">
+      <li class="list-item" v-for="(user, i) in users" :key="i">
+        <label for="">
+          <input type="checkbox" name="check" id="">
+          {{ user.name }}
+        </label>
+      </li>
     </ul>
   </div>
 </template>
-
