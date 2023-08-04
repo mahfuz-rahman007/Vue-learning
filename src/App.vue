@@ -11,7 +11,7 @@ const todos = reactive([
 const addTodo = (event) => {
   event.preventDefault();
   if (!name.value.length) {
-    alert('Give a Valid Task');
+    alert('Please Give a Valid Task');
     return
   }
   todos.push({
